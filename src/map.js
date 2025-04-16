@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 function Map() {
   const mapRef = useRef(null);
-  const [map, setMap] = useState(null);
+  const [, setMap] = useState(null); 
+  const [, setPath] = useState([]); 
   const vehicleRef = useRef(null); 
-  const [path, setPath] = useState([]); 
   const indexRef = useRef(1); 
   const intervalRef = useRef(null); 
 
@@ -74,4 +74,5 @@ function Map() {
 
   return <div ref={mapRef} style={{ height: "100vh", width: "100%" }} />;
 }
+
 export default Map;
